@@ -103,7 +103,7 @@ All file movements and operations are logged to `file_organizer.log` with timest
 
 ## License
 
-*Specify your license here (e.g., MIT License).*
+This project uses a MIT License. Feel free to read about it on the License page.
 
 ## Contributions
 
