@@ -62,28 +62,6 @@ The application relies on a `config.json` file for customization. If the file do
     }
 }
 ```
-## Releases
-
-The project provides cross-platform support by offering both `.exe` and `.AppImage` files for Windows and Linux users, respectively.
-
-### Downloading the Releases
-
-- **Windows (.exe)**: Download the latest `.exe` release from the [Releases page](https://github.com/your-username/your-repo/releases).
-- **Linux (.AppImage)**: Download the `.AppImage` file from the [Releases page](https://github.com/your-username/your-repo/releases), make it executable, and run it.
-
-### Running the AppImage on Linux
-
-1. Download the `.AppImage` file from the [Releases page](https://github.com/your-username/your-repo/releases).
-2. Make the file executable:
-   ```bash
-   chmod +x AdvancedFileOrganizer-x86_64.AppImage
-   ```
-3. Run the AppImage:
-   ```bash
-   ./AdvancedFileOrganizer-x86_64.AppImage
-   ```
-   
-Replace `your-username` and `your-repo` with your GitHub username and repository name. Let me know if you need any further help with setting this up!
 
 ## Customization
 
