@@ -1,2 +1,115 @@
-# py-file-organizer
-Python based file organizer
+# Advanced File Organizer
+
+A PyQt-based Python application designed to organize files within a specified directory into categorized folders based on their file types. The tool provides an interactive graphical user interface (GUI) to allow users to easily select directories and monitor file organization progress through a progress bar.
+
+## Features
+
+- **Automatic File Sorting**: Moves files to categorized folders based on extensions (e.g., Documents, Videos, Pictures).
+- **Configurable Structure**: Reads configuration from `config.json` to determine file categories and target directories.
+- **Progress Tracking**: Displays a progress bar to visualize the status of file organization.
+- **Logging**: Logs all actions (moved, renamed, or skipped files) to `file_organizer.log`.
+- **Customizable UI**: Styled with a modern look and feel.
+
+## Installation
+
+1. **Install the required Python package**:
+   ```bash
+   pip install PyQt5
+   ```
+
+2. **Run the Application**:
+   ```bash
+   python FileOrganizer.py
+   ```
+
+## How to Use
+
+1. **Launch the application**.
+2. **Select a directory** to organize by clicking on the "Browse" button.
+3. **Click "Start Organizing"** to begin sorting the files.
+4. Monitor the progress on the progress bar.
+5. Upon completion, a message box will notify you that the task is complete.
+
+## Configuration
+
+The application relies on a `config.json` file for customization. If the file does not exist, it is created with default values upon the first run.
+
+### Default Configuration Structure
+
+```json
+{
+    "base_dir": "~/Downloads",
+    "file_types": {
+        "Documents": [".pdf", ".docx", ".txt", ".xlsx", ".pptx", ".doc"],
+        "Videos": [".mp4", ".mkv", ".mov", ".avi"],
+        "Pictures": [".jpg", ".jpeg", ".png", ".gif", ".bmp"],
+        "Music": [".mp3", ".wav", ".flac", ".aac"],
+        "Archives": [".zip", ".rar", ".7z", ".tar", ".gz"],
+        "Programs": [".exe", ".msi", ".sh", ".bat"],
+        "MayaProjects": [".ma", ".mb", ".obj", ".fbx"]
+    },
+    "target_dirs": {
+        "Documents": "~/Documents",
+        "Videos": "~/Videos",
+        "Pictures": "~/Pictures",
+        "Music": "~/Music",
+        "Archives": "~/Downloads/Archives",
+        "Programs": "~/Downloads/Programs",
+        "MayaProjects": "~/Documents/Maya"
+    }
+}
+```
+## Releases
+
+The project provides cross-platform support by offering both `.exe` and `.AppImage` files for Windows and Linux users, respectively.
+
+### Downloading the Releases
+
+- **Windows (.exe)**: Download the latest `.exe` release from the [Releases page](https://github.com/your-username/your-repo/releases).
+- **Linux (.AppImage)**: Download the `.AppImage` file from the [Releases page](https://github.com/your-username/your-repo/releases), make it executable, and run it.
+
+### Running the AppImage on Linux
+
+1. Download the `.AppImage` file from the [Releases page](https://github.com/your-username/your-repo/releases).
+2. Make the file executable:
+   ```bash
+   chmod +x AdvancedFileOrganizer-x86_64.AppImage
+   ```
+3. Run the AppImage:
+   ```bash
+   ./AdvancedFileOrganizer-x86_64.AppImage
+   ```
+   
+Replace `your-username` and `your-repo` with your GitHub username and repository name. Let me know if you need any further help with setting this up!
+
+## Customization
+
+- **Modify `config.json`** to adjust file type categories and target directories to your needs.
+- **UI Customization**: Edit the `setStyleSheet` section in the `init_ui` method of the `FileOrganizerApp` class for personalized styling.
+
+## Logging
+
+All file movements and operations are logged to `file_organizer.log` with timestamps and details, making it easy to review what actions were taken.
+
+## Example Use Cases
+
+- **Organize your Downloads folder** to declutter various files into respective directories.
+- **Sort project assets** like Maya files into dedicated project folders.
+- **Easily identify unorganized files** that do not match any configured file type.
+
+## Future Enhancements
+
+- Add advanced filtering options for selecting specific file types.
+
+## License
+
+*Specify your license here (e.g., MIT License).*
+
+## Contributions
+
+Contributions are welcome! Please fork the repository and create a pull request for any new features or improvements.
+
+---
+
+Happy organizing!
+```
