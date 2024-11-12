@@ -2,6 +2,8 @@
 
 A PyQt-based Python application designed to organize files within a specified directory into categorized folders based on their file types. The tool provides an interactive graphical user interface (GUI) to allow users to easily select directories and monitor file organization progress through a progress bar.
 
+![FileOrganizer](https://github.com/user-attachments/assets/a479d470-427b-4b81-8887-ef95cdcd786f)
+
 ## Features
 
 - **Automatic File Sorting**: Moves files to categorized folders based on extensions (e.g., Documents, Videos, Pictures).
@@ -11,6 +13,7 @@ A PyQt-based Python application designed to organize files within a specified di
 - **Customizable UI**: Styled with a modern look and feel.
 
 ## Installation
+
 
 1. **Install the required Python package**:
    ```bash
