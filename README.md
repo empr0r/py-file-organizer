@@ -81,6 +81,7 @@ All file movements and operations are logged to `file_organizer.log` with timest
 ## Future Enhancements
 
 - Add advanced filtering options for selecting specific file types.
+- Downloadable executables once i figure out how to do that
 
 ## License
 
@@ -93,3 +94,5 @@ Contributions are welcome! Please fork the repository and create a pull request 
 ---
 
 Happy organizing!
+
+
